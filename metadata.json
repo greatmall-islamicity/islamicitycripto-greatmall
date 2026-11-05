@@ -1,0 +1,6 @@
+{
+  "name": "Islamicity Cripto - Platform Zakat & Wakaf Kripto Transparan",
+  "description": "Platform infrastruktur cerdas zakat dan wakaf berbasis blockchain terenkripsi end-to-end, analitik real-time, verifikasi biometrik, AI deteksi penipuan, dan aksesibilitas inklusif WCAG AAA.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

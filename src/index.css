@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-arabic: 'Amiri', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* WCAG AAA Accessible focus ring */
+:focus-visible {
+  outline: 3px solid #059669;
+  outline-offset: 2px;
+}
+
+/* High contrast mode */
+body.theme-high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+body.theme-high-contrast .bg-white,
+body.theme-high-contrast .bg-neutral-50,
+body.theme-high-contrast .bg-slate-50,
+body.theme-high-contrast .bg-neutral-900,
+body.theme-high-contrast .bg-slate-900 {
+  background-color: #0a0a0a !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+body.theme-high-contrast button {
+  border: 1px solid #ffffff !important;
+}
+
+/* Sepia eye comfort mode */
+body.theme-sepia {
+  background-color: #fbf7ee !important;
+  color: #382c1e !important;
+}
+body.theme-sepia .bg-white {
+  background-color: #f5eedb !important;
+  border-color: #dfd3be !important;
+}
+
+/* Font scale classes */
+body.font-scale-sm { font-size: 14px; }
+body.font-scale-md { font-size: 16px; }
+body.font-scale-lg { font-size: 18px; }
+body.font-scale-xl { font-size: 20px; }
+
+/* Subtle Islamic geometric star watermark motif */
+.islamic-pattern {
+  background-image: radial-gradient(rgba(5, 150, 105, 0.08) 1.5px, transparent 0);
+  background-size: 28px 28px;
+}
